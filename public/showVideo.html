@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--强制360浏览器使用极速模式-->
+    <meta name="renderer" content="webkit">
+    <!--强制IE不使用兼容视图-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <title>铭贵物联 中景物联</title>
+    <link rel="shortcut icon" href="images/title-icon.ico">
+    <link rel="stylesheet" href="stylesheets/zui.min.css"/>
+    <link rel="stylesheet" href="stylesheets/main.css" id="css"/>
+    <script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+    <script src="javascripts/service-nav.js"></script>
+    <!--[if lt IE 9]>
+    <script src="javascripts/html5shiv.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container main">
+    <!--导航栏开始-->
+    <header class="row nav-header">
+        <!--logo-->
+        <div class="col-sm-2 nav-log">
+            <img src="images/logo.png" alt="铭贵物联 中景物联"/>
+        </div>
+        <!--logo-->
+
+        <!--导航列表-->
+        <div class="col-sm-9 nav-list">
+            <ul>
+                <li><a href="mwteck.html">首页</a></li>
+                <li><a href="integrated.html">产品</a></li>
+                <li><a href="companyNews.html">动态</a></li>
+                <li><a href="showVideo.html" class="nav-active">技术支持</a></li>
+                <li><a href="solution.html">解决方案</a></li>
+                <li><a href="blocIntro.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!--导航列表-->
+
+        <!--演示平台铵钮-->
+        <div class="col-sm-1 nav-show-btn">
+            <div>
+                <a href="http://www.esafesys.com/"><img src="images/showbtn.png" alt=""/></a>
+            </div>
+        </div>
+        <!--演示平台铵钮-->
+    </header>
+    <!--导航栏结束-->
+
+    <!--背景栏-->
+    <div class="row">
+        <div class="col-sm-12 news-bg-box"></div>
+    </div>
+    <!--背景栏-->
+    <!--content开始-->
+    <section class="row">
+        <!--第一屏开始-->
+        <section class="col-sm-12 page-section">
+            <div class="introduce-box table-int">
+                <div class="table-cell-int">
+                    <!--按钮组-->
+                    <div class="row contact-btn no-border">
+                        <div class="col-sm-12 ">
+                            <a class="clear-mar-left con-active" href="showVideo.html">视频演示</a>
+                            <a href="applyUse.html">试用申请</a>
+                            <a href="aboutDownload.html">相关下载</a>
+                            <a href="FAQ.html">FAQ</a>
+                        </div>
+                    </div>
+                    <!--按钮组-->
+
+                    <!--视频播放区-->
+                    <div class="row video-box">
+                        <img src="images/videoImg/video_bg.png" alt="" ondragstart="return false"/>
+                        <div class="col-sm-3 video-btn-box">
+                            <div class="video-app-btn">手机APP视频</div>
+                            <div class="video-web-btn">WEB视频</div>
+                        </div>
+                        <div class="col-sm-9 video-show-box">
+                            <div class="table-int">
+                                <div class="table-cell-int">
+                                    <div class="video-show">
+                                        <div>
+                                            <embed id="em1" src="http://player.youku.com/player.php/sid/XODc3NDgxOTIw/v.swf" allowFullScreen="true" quality="high" width="580" height="326" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+                                            <embed id="em2" src="http://player.youku.com/player.php/sid/XMTI3MDk2OTAzMg==/v.swf" allowFullScreen="true" quality="high" width="580" height="326" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+                                        </div>
+                                    </div>
+                                    <h3 id="v-title">【成都铭贵手机APP操作演示】</h3>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <!--视频播放区-->
+                </div>
+            </div>
+        </section>
+        <!--第一屏结束-->
+    </section>
+    <!--content结束-->
+
+    <!--脚开始-->
+    <div class="row">
+        <div class="col-sm-12 foo-bg-line"><img src="images/Shadowe.png" alt=""/></div>
+    </div>
+    <footer class="row foo-bg-color" id="footer"></footer>
+    <!--脚结束-->
+</div>
+<script src="javascripts/footer.js?t=21394123123"></script>
+<script>
+    var $videoBtn = $(".video-btn-box>div");
+    var $title = $("#v-title");
+    var $em2 = $("#em2");
+    $em2.hide();
+    $videoBtn.click(function () {
+        var $this = $(this);
+        var btnType = $this.attr("class");
+        var $em1 = $("#em1");
+        if(btnType=="video-app-btn"){
+            $title.text("【成都铭贵手机APP操作演示】");
+            $em1.show();
+            $em2.hide();
+        }else{
+            $title.text("【成都铭贵电梯系统WEB培训】");
+            $em1.hide();
+            $em2.show();
+        }
+        $videoBtn.stop().animate({width:"140px"},200);
+        $videoBtn.css({background:"#ffffff",color:"#000000"});
+        $this.stop().animate({width:"162px"},200);
+        $this.css({background:"#12a2e3",color:"#ffffff"});
+    });
+</script>
+
+<!--service-nav-->
+<div id="leftsead">
+    <ul>
+        <li><a href="tencent://message/?uin=2959248364&Site=test315.nesky.cn&Menu=yes"><img src="images/foot03/ll01.png" width="131" height="49" class="hides"/><img src="images/foot03/l01.png" width="47" height="49" class="shows" /></a></li>
+        <li><a href="tencent://message/?uin=2945258170 &Site=test315.nesky.cn&Menu=yes"><img src="images/foot03/ll03.png" width="131" height="49"  class="hides"/><img src="images/foot03/l03.png" width="47" height="49" class="shows" /></a></li>
+        <li><a href="applyUse.html" class="youhui"><img src="images/foot03/l02.png" width="47" height="49" class="shows" /><img src="images/foot03/youhui.png" width="145" height="343" class="hides" usemap="#taklhtml"/></a></li>
+        <li><a href="tencent://message/?uin=3147053518&Site=test315.nesky.cn&Menu=yes"><img src="images/foot03/ll04.png" width="131" height="49" class="hides"/><img src="images/foot03/l04.png" width="47" height="49" class="shows" /></a></li>
+        <li><a href="tencent://message/?uin=2437149075&Site=test315.nesky.cn&Menu=yes"><img src="images/foot03/ll05.png" width="131" height="49" class="hides"/><img src="images/foot03/l05.png" width="47" height="49" class="shows" /></a></li>
+        <li><a id="top_btn"><img src="images/foot03/ll06.png" width="131" height="49" class="hides"/><img src="images/foot03/l06.png" width="47" height="49" class="shows" /></a></li>
+    </ul>
+</div>
+<!--引用百度提供的在线服务-->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F92114e3504e354aaa19dae6c5c898cd4' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--引用百度提供的在线服务-->
+<!--service-nav-->
+</body>
+</html>

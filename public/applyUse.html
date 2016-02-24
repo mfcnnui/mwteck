@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--强制360浏览器使用极速模式-->
+    <meta name="renderer" content="webkit">
+    <!--强制IE不使用兼容视图-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <title>铭贵物联 中景物联</title>
+    <link rel="shortcut icon" href="images/title-icon.ico">
+    <link rel="stylesheet" href="stylesheets/zui.min.css"/>
+    <link rel="stylesheet" href="stylesheets/main.css" id="css"/>
+    <script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+    <script src="javascripts/service-nav.js"></script>
+    <script src="javascripts/jquery.placeholder.js"></script>
+    <!--[if lt IE 9]>
+    <script src="javascripts/html5shiv.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container main">
+    <!--导航栏开始-->
+    <header class="row nav-header">
+        <!--logo-->
+        <div class="col-sm-2 nav-log">
+            <img src="images/logo.png" alt="铭贵物联 中景物联"/>
+        </div>
+        <!--logo-->
+
+        <!--导航列表-->
+        <div class="col-sm-9 nav-list">
+            <ul>
+                <li><a href="mwteck.html">首页</a></li>
+                <li><a href="integrated.html">产品</a></li>
+                <li><a href="companyNews.html">动态</a></li>
+                <li><a href="showVideo.html" class="nav-active">技术支持</a></li>
+                <li><a href="solution.html">解决方案</a></li>
+                <li><a href="blocIntro.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!--导航列表-->
+
+        <!--演示平台铵钮-->
+        <div class="col-sm-1 nav-show-btn">
+            <div>
+                <a href="http://www.esafesys.com/"><img src="images/showbtn.png" alt=""/></a>
+            </div>
+        </div>
+        <!--演示平台铵钮-->
+    </header>
+    <!--导航栏结束-->
+
+    <!--背景栏-->
+    <div class="row">
+        <div class="col-sm-12 news-bg-box"></div>
+    </div>
+    <!--背景栏-->
+    <!--content开始-->
+    <section class="row">
+        <!--第一屏开始-->
+        <section class="col-sm-12 page-section">
+            <div class="introduce-box table-int">
+                <div class="table-cell-int">
+                    <!--按钮组-->
+                    <div class="row contact-btn no-border">
+                        <div class="col-sm-12 ">
+                            <a class="clear-mar-left" href="showVideo.html">视频演示</a>
+                            <a href="applyUse.html" class="con-active">试用申请</a>
+                            <a href="aboutDownload.html">相关下载</a>
+                            <a href="FAQ.html">FAQ</a>
+                        </div>
+                    </div>
+                    <!--按钮组-->
+
+                    <!--进度线-->
+                    <div class="row plan-line-box">
+                        <div class="col-sm-6">
+                            <span>1、填写申请信息</span>
+                            <div class="plan-cir-bar"></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>2、试用功能</span>
+                            <div class="plan-cir-bar"></div>
+                        </div>
+                    </div>
+                    <!--进度线-->
+
+                    <!--表单-->
+                    <div class="row form-box">
+                        <div class="col-sm-4">
+                            <form id="myForm" action="http://www.esafesys.com/addNewApply.action" class="form-horizontal" role="form" method='post'>
+                                <!--输入组件-->
+                                <div class="input-box form-group">
+                                    <div class="col-sm-1">
+                                        <span class="form-icon corp-name-icon"></span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <input name="companyName" id="companyName" data-form="1" class="col-sm" type="text" maxlength="25" placeholder="公司名称"/>
+                                    </div>
+                                </div>
+                                <!--输入组件-->
+
+                                <!--输入组件-->
+                                <div class="input-box form-group">
+                                    <div class="col-sm-1">
+                                        <span class="form-icon lift-num-icon"></span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <input name="companyElevatorNumber" id="companyElevatorNumber" data-form="2" class="col-sm" type="text" maxlength="25" placeholder="电梯数量"/>
+                                    </div>
+                                </div>
+                                <!--输入组件-->
+
+                                <!--输入组件-->
+                                <div class="input-box form-group">
+                                    <div class="col-sm-1">
+                                        <span class="form-icon user-name-icon"></span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <input name="companyContactName" id="companyContactName"  data-form="3" class="col-sm" type="text" maxlength="25" placeholder="联系人姓名"/>
+                                    </div>
+                                </div>
+                                <!--输入组件-->
+
+                                <!--输入组件-->
+                                <div class="input-box form-group">
+                                    <div class="col-sm-1">
+                                        <span class="form-icon tel-num-icon"></span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <input name="companyContactPhone" id="companyContactPhone" data-form="4" class="col-sm" type="text" maxlength="25" placeholder="联系人电话"/>
+                                    </div>
+                                </div>
+                                <!--输入组件-->
+
+                                <!--输入组件-->
+                                <div class="input-box form-group">
+                                    <div class="col-sm-1">
+                                        <span class="form-icon email-box-icon"></span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <input name="companyContactEmail" id="companyContactEmail" data-form="5" class="col-sm" type="text" maxlength="25" placeholder="电子邮箱"/>
+                                    </div>
+                                </div>
+                                <!--输入组件-->
+
+                                <!--输入组件-->
+                                <div class="input-box form-group">
+                                    <div class="col-sm-1">
+                                        <span class="form-icon QQ-num-icon"></span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <input name="companyContactQQ" id="companyContactQQ" data-form="6" class="col-sm" type="text" maxlength="50" placeholder="QQ号码"/>
+                                    </div>
+                                    <input type="hidden" name="modelId" value="473,479,474,476,477,475,478"/>
+                                </div>
+                                <!--输入组件-->
+                                <!--提交按钮-->
+                                <input class="btn btn-primary sub-btn" type="submit" value="提交申请"/>
+                                <!--提交按钮-->
+                            </form>
+
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="message-box">
+                                <div class="message-bg">sadfsafdsadf</div>
+                            </div>
+                            <div class="message-box">
+                                <div class="message-bg"></div>
+                            </div>
+                            <div class="message-box">
+                                <div class="message-bg"></div>
+                            </div>
+                            <div class="message-box">
+                                <div class="message-bg"></div>
+                            </div>
+                            <div class="message-box">
+                                <div class="message-bg"></div>
+                            </div>
+                            <div class="message-box">
+                                <div class="message-bg"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 left-border"></div>
+                        <div class="col-sm-4 tryOut-list-box">
+                            <img src="images/applyUseImg/right-checke.png" alt="" ondragstart="return false"/>
+                        </div>
+                    </div>
+                    <!--表单-->
+                </div>
+
+            </div>
+        </section>
+        <!--第一屏结束-->
+    </section>
+    <!--content结束-->
+
+    <!--脚开始-->
+    <div class="row">
+        <div class="col-sm-12 foo-bg-line"><img src="images/Shadowe.png" alt=""/></div>
+    </div>
+    <footer class="row foo-bg-color" id="footer"></footer>
+    <!--脚结束-->
+</div>
+
+<!--service-nav-->
+<div id="leftsead">
+    <ul>
+        <li><a href="tencent://message/?uin=2959248364&Site=test315.nesky.cn&Menu=yes"><img src="images/foot03/ll01.png" width="131" height="49" class="hides"/><img src="images/foot03/l01.png" width="47" height="49" class="shows" /></a></li>
+        <li><a href="tencent://message/?uin=2945258170 &Site=test315.nesky.cn&Menu=yes"><img src="images/foot03/ll03.png" width="131" height="49"  class="hides"/><img src="images/foot03/l03.png" width="47" height="49" class="shows" /></a></li>
+        <li><a href="applyUse.html" class="youhui"><img src="images/foot03/l02.png" width="47" height="49" class="shows" /><img src="images/foot03/youhui.png" width="145" height="343" class="hides" usemap="#taklhtml"/></a></li>
+        <li><a href="tencent://message/?uin=3147053518&Site=test315.nesky.cn&Menu=yes"><img src="images/foot03/ll04.png" width="131" height="49" class="hides"/><img src="images/foot03/l04.png" width="47" height="49" class="shows" /></a></li>
+        <li><a href="tencent://message/?uin=2437149075&Site=test315.nesky.cn&Menu=yes"><img src="images/foot03/ll05.png" width="131" height="49" class="hides"/><img src="images/foot03/l05.png" width="47" height="49" class="shows" /></a></li>
+        <li><a id="top_btn"><img src="images/foot03/ll06.png" width="131" height="49" class="hides"/><img src="images/foot03/l06.png" width="47" height="49" class="shows" /></a></li>
+    </ul>
+</div>
+<!--引用百度提供的在线服务-->
+<script type="text/javascript">
+    $(function () {
+        $('input[placeholder]').placeholder();
+    })
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F92114e3504e354aaa19dae6c5c898cd4' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--引用百度提供的在线服务-->
+<!--service-nav-->
+<script src="javascripts/footer.js?t=21394123123"></script>
+<script src="javascripts/validate.js"></script>
+</body>
+</html>

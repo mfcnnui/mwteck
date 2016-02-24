@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+  </head>
+  <body>
+	<%=username %>	
+    <p>Welcome1</p>
+    <% items.forEach(function(item){%>
+    <table id="tb1"  border="1" width="650" id="mytable">
+	    <tr>
+		    <td id="uId"><%=item.id %></td>
+		    <td> <%=item.name %></td>
+		    <td>  <%=item.address %></td>
+		    <td>  <%=item.phone %></td>
+		    <td><button id='btn' >del</button></td>
+           </tr>
+    </table>
+    <%})%>
+    <script type="text/javascript">
+	var btns = document.getElementsByTagName('button');
+	for(var i=0; i<btns.length; i++){
+	    	 btns[i].onclick = function(){
+		var parentTD = this.parentNode;
+		var parentTR = parentTD.parentNode;
+		var firstTD = parentTR.getElementsByTagName('td')[0];
+		var value = firstTD.innerHTML;
+		var xhr=getXmlHttpRequest();
+		xhr.open('get','del?id='+value,true);
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4&&xhr.status==200){
+				window.location='/main'
+			}
+
+		}
+		xhr.send(null);
+	
+		 }	
+	}
+function getXmlHttpRequest(){
+		var xhr=null;
+		if((typeof XMLHttpRequest)!='undefined'){
+			xhr=new XMLHttpRequest();
+				
+		}else{
+			 xhr=new ActiveXObject('Microsoft.XMLHttp');
+            
+		}
+		return xhr;
+	}
+	   
+
+	
+</script>
+    
+  </body>
+</html>
